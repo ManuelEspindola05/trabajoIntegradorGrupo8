@@ -25,32 +25,35 @@
 
    <nav>
        <a href="" class="nav-link">Inicio</a>
-       <a href="" class="nav-link">Quienes Somos</a>
-       <a href="" class="nav-link">Contactos</a>   
+       <a href="#somos" class="nav-link">Quienes Somos</a>
+       <a href="#contactanos" class="nav-link">Contactos</a>   
    </nav> 
   
 </header>
 
-    
-<main>
-    
-<p class="presentacion"> Hola! Somos <b>GuarDog</b>, un hotel diseñado especialmente 
-      para brindarles a tus peludos amigos el mejor cuidado
-      y atención mientras estás ocupado o de vacaciones.<br>
-      <br>
-      En <b>GuarDog</b>, nos preocupamos por el bienestar de cada
-      mascota que llega a nuestras instalaciones. Contamos con habitaciones
-      cómodas y seguras, adaptadas a las necesidades de cada uno
-      de nuestros amados huéspedes. <a class="leerMas" onclick="leerMas()">Leer más.</a>
-      </p>
-     <!--Propuesta: "Leer más" deberá desplegar un texto completo de presentación estilo alert dentro de la misma página-->
-
-</main>
   
-<footer class="pie">
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore sed, accusantium veritatis, nisi iste blanditiis itaque error adipisci voluptatum!.   
+       
+    </p>
+
+<div class="somos" style="max-width: 50vh; min-height: 50vh;">
+
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem ea animi rerum aperiam. Quis nostrum molestias temporibus,
+    reprehenderit non dignissimos accusantium corrupti minima dicta quibusdam iure, atque voluptate sed!
+
+
+</div>
+
+
+
+   </div>
+<footer class="pie" id="contactanos">
+
      <div class="head">
-      <div class="logo2">
-         <img src="imagenes/guardog/GUARDOG/guardogCir1.png" alt="">
+      <div class="logo">
+         <img src="imagenes/guardog/GUARDOG/guardog1.png" alt="">
          <p>Guardog</p>
          <div class="redes">
             <span>
@@ -59,6 +62,25 @@
          </div>
       </div>
      </div>
+     
+      <div class="right">
+        <h3 style="text-align: center;">Contacto</h3>
+        <form>
+          <label for="name" style="text-align: start;">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email" style="text-align: start;">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message" style="text-align: start;">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+   
+
+
 </footer>
 </body>
 </html>
