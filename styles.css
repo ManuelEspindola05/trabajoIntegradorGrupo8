@@ -145,7 +145,11 @@ body{
   justify-content: right ;
   height: 290px;
   background-color: rgb(249, 249, 151);
+  float: right;
+  width: 50%;
+
 }
+
   .contact-form {
     max-width: 100px;
     margin-right: 100px;
@@ -160,19 +164,22 @@ body{
 
 .left .right {
     flex-basis: 50%;
+    /*esto agrego*/
+    display: inline-block;
   }
-
+/*aca cambio*/
   .left {
-    text-align: left;
-    align-items: center;
-    vertical-align: middle;
-    margin-inline: 20%;
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    height: 290px;
+    background-color: rgb(249, 249, 151);
+    float: left;
+    width: 50%;
   }
 
-  .right {
-    text-align: left;
-  }
-
+ 
  form{
     display: flex;
     flex-direction: column;
