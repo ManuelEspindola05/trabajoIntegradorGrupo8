@@ -14,7 +14,7 @@ header{
     background-color: rgb(249, 249, 151);
     align-items: center;
     box-shadow: 0px 1px 8px 2px #c3c916;
-    
+    position: static;/*agrgue*/
 }
 .logo{
     display: flex;
@@ -47,6 +47,38 @@ h1{
     text-shadow: 2px 2px 5px #000
 }
 
+/*aca agrego lo de main para formulario e imagen*/
+
+.left-main .right-main{
+  flex-basis: 50%;
+  display: inline-block;
+}
+
+/*corresponde al cuadro que dice somos*/
+.left-main{
+  float: left;
+  display: flex;
+  justify-content: left;
+  height: 100vh;/*aca dice que ocupa el 100 de la pantalla*/
+   background-color: pink;
+  float: left;
+  width: 75%;
+}
+
+/*corresponde al espacio para el formulario*/
+.right-main{
+  display: flex;
+  justify-content: right ;
+  height: 100vh;
+  background-color: darkviolet;
+ /*aca agrego*/
+  float: right;
+  width: 25%;/*ancho del div*/
+}
+
+
+
+/*lo comento porq no se que va
 p{
     box-sizing: border-box;
     width: 10px;
@@ -65,7 +97,7 @@ p{
     margin-top: 40px;
     box-shadow: 0px 2px 5px 2px #000
 }  
-
+*/
 
 
 .presentacion{
@@ -94,6 +126,12 @@ cursor: pointer;
 color:blueviolet;
 }
 
+/*agrego el css de leer mas*/
+.more-content{
+  display: none; 
+  }
+  
+
 body{
     background-image: url(imagenes/guardog/GUARDOG/happy-smile-dog-images-png.png);
     background-size: contain;
@@ -109,17 +147,33 @@ body{
    
 }
 
+/*NO TENGO IDEA PORQ SI NO COMENTO ESTO SE PONE TODO VERDE!!!!*/
+/*.somos{
+  background-color: chartreuse;
+}*/
 
+.galeria{
+  background-color: #c3c916;
+  height: 100vb;
+}
+  
+/*:::Pié de Pag*/
+/*.pie-pagina{
+  width: 100%;
+  height: 150px;
+ background-color:  rgb(249, 249, 151);
+ 
+}*/
 
  
 
  
 /*:::Pié de Pag*/
-.pie-pagina{
+/*.pie-pagina{
   width: 100%;
   height: 150px;
   background-color:  rgb(249, 249, 151);
-}
+}*/
 .pie-pagina .grupo-1{
   width: 100%;
   margin: auto;
@@ -155,12 +209,13 @@ body{
     margin-right: 100px;
   }
 
-.logo-pie{
+/*no se que hace
+  .logo-pie{
     background-color:  rgb(249, 249, 151);
     margin-right: 100%;
     padding-left: 100%;
     align-items: start;
-}
+}*/
 
 .left .right {
     flex-basis: 50%;
