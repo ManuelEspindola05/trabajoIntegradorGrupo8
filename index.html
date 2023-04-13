@@ -8,14 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
-   
-   <!-- cambie shortcut por icon solo-->
-    <!--<link ref="shortcut icon" type="image/x-icon" href="./imagenes/guardog/GUARDOG/faviconGuarDog.ico">-->
-
     <link rel="icon" href="./imagenes/guardog/GUARDOG/faviconGuarDog.ico" type="image/x-ico">
-
+   
     <title>Trabajo Integrador</title>
-
     <script>
 function showMore() {
   var moreText = document.querySelector(".more-content");
@@ -25,144 +20,157 @@ function showMore() {
     moreText.style.display = "none";
   }
 }
+     </script>
 
 
-    </script>
 
 </head>
 
 <body>
-      <!-- Aca empieza el header-->    
-     <header>
-           <div>
-                 <div>
-                     <a href="#" class="logo">
-                       <b>
-                         <img src="imagenes/guardog/GUARDOG/guardogCir1 - copia.png" alt="logo de la compañia">
-                       </b>
-                          <h1 class="logo-nombre">GuarDog</h1>
-                      </a>
-                  </div>
-            </div>
+<!-- Aca empieza el header-->    
+<header>
+   <a href="#" class="logo">
+    <b>
+   <img src="imagenes/guardog/GUARDOG/guardogCir1 - copia.png" alt="logo de la compañia">
+   </b>
+   <h1 class="logo-nombre">GuarDog</h1>
+   </a>
+
+   <nav>
+       <a href="" class="nav-link">Inicio</a>
+       <a href="#somos" class="nav-link">Quienes Somos</a>
+       <a href="#contactanos" class="nav-link">Contactos</a>   
+   </nav> 
+</header>
+
+<!-- Aaca empieza el main-->
+<main>
+  <div class="left-main"> 
+   <p id="leer" class="presentacion"> Hola! Somos <b>GuarDog</b>, un hotel diseñado especialmente 
+      para brindarles a tus peludos amigos el mejor cuidado
+      y atención mientras estás ocupado o de vacaciones.<br>
+      <br>
+      En <b>GuarDog</b>, nos preocupamos por el bienestar de cada
+      mascota que llega a nuestras instalaciones. Contamos con habitaciones
+      cómodas y seguras, adaptadas a las necesidades de cada uno
+      de nuestros amados huéspedes. <label class="more-content">  bla bla bla bla   </label>
+      <a href="#"  id="leer-mas" onclick="showMore()" style="color: blue;">leer mas  </a>  
+  </div>
+    </p>
+     <!--"Leer más" deberá desplegar un texto completo de presentación estilo alert dentro de la misma página-->
+<!--empiezo a agregar codigo -->
+
+
+
+<!-- Aca empieza  el formulario de prosceso-->
+<div class="right-main" > 
+  <div>
+  <h1>Formulario de proceso</h1>
+  </div>
+</div>
+
+<div >
+<section class="somos" >
+     <h1 style="text-align: center; "> Conocenos </h1>
+ </section>
+
+ <div class="contenedor-imagenes">
+  <figure>
+    <img class="foto"src="/imagenes/guardog/GUARDOG/chico-guapo.jpg" alt="">
+    <figcaption>Hola soy Ariel, soy amantes de los perros
+    </figcaption>
+  </figure>
   
-            <div>
-               <nav>
-                   <a href="" class="nav-link">Inicio</a>
-                   <a href="#somos" class="nav-link">Quienes Somos</a>
-                   <a href="#contactanos" class="nav-link">Contactos</a>   
-               </nav> 
-             </div>
-      </header>
-
-        <!-- Aaca empieza el main-->
-   <main>
-         <div class="left-main"> 
-             <p id="leer" class="presentacion"> Hola! Somos <b>GuarDog</b>, un hotel diseñado especialmente 
-                  para brindarles a tus peludos amigos el mejor cuidado
-                  y atención mientras estás ocupado o de vacaciones.<br>
-                    <br>
-                  En <b>GuarDog</b>, nos preocupamos por el bienestar de cada
-                  mascota que llega a nuestras instalaciones. Contamos con habitaciones
-                  cómodas y seguras, adaptadas a las necesidades de cada uno
-                  de nuestros amados huéspedes. 
-               </p>
-                <!--aca agregue--><label class="more-content">  bla bla bla bla   </label>
-                <a href="#"  id="leer-mas" onclick="showMore()" style="color: blue;">leer mas  </a>  <!--<a class="leerMas" onclick="leerMas()">Leer más.</a>-->
-           </div>
-    
-      <!--"Leer más" deberá desplegar un texto completo de presentación estilo alert dentro de la misma página-->
-      <!--empiezo a agregar codigo -->
-
-      <!-- Aca empiezo con el formulario de prosceso-->
-        <div class="right-main" > 
-          <div>
-             <h1>Formulario de proceso</h1>
-          </div>
-        </div>
+  <figure>
+    <img class="foto" src="/imagenes/guardog/GUARDOG/filmacion-interiores-hermosa-chica-adolescente-feliz-tatuajes-vistiendo-su-cabello-jengibre-trenza-desordenada.jpg" alt="">
+    <figcaption>Hola soy Sole y me encantan los perros de raza pequeña</figcaption>
+  </figure>
+  
+  <figure>
+    <img class="foto"src="/imagenes/guardog/GUARDOG/hombre-joven-pie-brazos-cruzados-camiseta-negra.jpg" alt="">
+    <figcaption>Hola soy Manuel y amo los perros grandes</figcaption>
+  </figure>
+ </div>
+</div>
 
 
-       <!--
-      <div >
-           <section class="somos" >
-               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem ea animi rerum aperiam. Quis    nostrum molestias temporibus,
-                   reprehenderit non dignissimos accusantium corrupti minima dicta quibusdam iure, atque voluptate sed!
-               </p>
-            </section>
-       </div>
-              -->
 
+<div>
+      <section class="galeria">
+       <h1 style="text-align: center;">Galeria de fotos</h1>
+       <img src="/imagenes/guardog/GUARDOG/guardog3.png" alt="" style="height: 500px; width: 500px; margin-left: 500px; margin-top: 50px;">
+      </section>
 
-        <div>
-             <section class="galeria">
-                <p>galeria de fotos</p>
-             </section>
-         </div>
+</div>
+</main>
 
-  </main>
-
-        <!-- Aca empieza el footer-->
-    <footer class="pie-pagina">
+<!-- Aca empieza el footer-->
+<footer class="pie-pagina">
      
-      <div class="right">
+        
+              <div class="right">
            
-         <form>
+               <form>
                 <!--Aca puse contacto-->
                 
-               <label style="text-align: center;font-size: large; text-shadow: 5px;  "><b> Contacto </b></label>
+               <label style="text-align: center;font-size: large; text-shadow: 5px;    "><b> Contacto </b></label>
                 
-               <label for="name" style="text-align: start;"> <b> Nombre:</b></label>
+                <label for="name" style="text-align: start;"> <b> Nombre:</b></label>
                  <input type="text" id="name" name="name" required>
            
-               <label for="email" style="text-align: start;"> <b> Email:</b></label>
+                 <label for="email" style="text-align: start;"> <b> Email:</b></label>
                  <input type="email" id="email" name="email" required>
            
-              <label for="message" style="text-align: start;"> <b> Mensaje:</b></label>
+                 <label for="message" style="text-align: start;"> <b> Mensaje:</b></label>
                  <textarea id="message" name="message" required></textarea>
            
                  <button type="submit">Enviar</button>
-         </form>
-       </div>
-
-                <!-- cambio para poner los iconos a la izquierda-->
-             <div class="left">
-                  <!-- aca agrrego iconos-->
-                 <div>
-                       <a href="#">
-                           <img src="imagenes/guardog/GUARDOG/guardogCir1.png" alt="logo2" style="width: 300px; height: 300px; margin-left: 55px;">
-                        </a>
-
-                       <a href="https://instagram.com" target="_blank"><img src="logos redes soc/instagram.png"    alt="Instagram"          style="margin-left: 165px; margin-top: 100px; width: 50px; height: 50px;  "  >
-                       </a>
-                  </div>
-              </div>
+               </form>
+             </div>
           
+          <!-- cambio para poner los iconos a la izquierda-->
+          <div class="left">
+ <!-- aca agrrego iconos-->
 
-           <div class="col-2">
-                <a href="https://www.facebook.com/ " target="_blank src="><img src="logos redes soc\facebook-logo.png" alt="Email"style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "    ></a>
-           </div>  
-          
 
-          <div class="col-2">
-                <a href="https://api.whatsapp.com/"  target="_blank"><img src="logos redes soc/WhatsApp-Logo-Transparent-PNG.png" alt="Phone" style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
-           </div>
+    <a href="#">
+        <img src="imagenes/guardog/GUARDOG/guardogCir1.png" alt="logo2" style="width: 300px; height: 300px; margin-left: 55px;">
+    </a>
 
-        <div class="grupo-1">
-               <div class="box">
+
+    <a href="https://instagram.com" target="_blank"><img src="logos redes soc/instagram.png" alt="Instagram"  style="margin-left: 165px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
+
+
+
+<div class="col-2">
+
+  <a href="https://www.facebook.com/ " target="_blank src="><img src="logos redes soc\facebook-logo.png" alt="Email"style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "    ></a>
+
+</div>
+
+<div class="col-2">
+
+  <a href="https://api.whatsapp.com/"  target="_blank"><img src="logos redes soc/WhatsApp-Logo-Transparent-PNG.png" alt="Phone" style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
+
+</div>
+
+
+
+</div>
+
+<div class="grupo-1">
+    <div class="box">
            
-                </div>
-        </div>
-
+          </div>
+         
          <div class="grupo-2">
-              <small>© 2023 <b>Grupo8Com168</b> - Todos los Derechos Reservados.</small>
-         </div>
-     </footer>
+          <small>© 2023 <b>Grupo8Com168</b> - Todos los Derechos Reservados.</small>
+      </div>
+   
+
+</footer>
+
+
+
 </body>
 </html>
-
-
-
-
-
-
-
-
