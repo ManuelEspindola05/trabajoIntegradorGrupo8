@@ -371,7 +371,7 @@ h3 {
   font-size: 20px;
 }
 
-/*--------------------------------INICIO FORMULARIO SESION/REGISTRARSE---------------*/
+//*--------------------------------INICIO FORMULARIO SESION/REGISTRARSE---------------*/
 .boton-sesion{
   margin: 20px 20px;
   padding: 20px;
@@ -393,14 +393,15 @@ h3 {
   background-size: cover;
   position:absolute;
   overflow: hidden; 
-  display: none;    
+  display: none;
+  box-shadow: 0px 0px 20x 9px red;    
 }
 
 .form-caja{
   width: 370px;
-  height: 550px;
+  height: 500px;
   position: relative;
-  margin: 6% auto;
+  margin: 50px auto;
   background: rgb(249, 249, 151);
   padding: 5px;
   border-radius: 10px;
@@ -411,7 +412,7 @@ h3 {
   width: 240px;
   margin: 30px auto;
   position: relative;
-  box-shadow: 0px 2px 5x 2px red #000000;
+  box-shadow: 0px 2px 20x 9px red #000000;
   border-radius: 30px;
 }
 
@@ -436,7 +437,7 @@ h3 {
 }
 
 .input-grupo{
-  top: 180px;
+  top: 70px;
   position: absolute;
   width: 280px;
   transition: 0.8s;
