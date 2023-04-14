@@ -9,22 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <link rel="icon" href="./imagenes/guardog/GUARDOG/faviconGuarDog.ico" type="image/x-ico">
-   
+     <script src="script.js"></script>
     <title>Trabajo Integrador</title>
-    <script>
-
-function showMore() {
-  var moreText = document.querySelector(".more-content");
-  if (moreText.style.display === "none") {
-    moreText.style.display = "block";
-  } else {
-    moreText.style.display = "none";
-  }
-}
-     </script>
-
-
-
 </head>
 
 <body>
@@ -42,7 +28,86 @@ function showMore() {
        <a href="#galeria1" class="nav-link">Quienes Somos</a>
        <a href="#contactanos" class="nav-link">Contactos</a>   
    </nav> 
+
+<!-----------------------INICIO BOTON SESION----------------------->            
+<div id="iniciarSesion">
+  <button class="boton-sesion" onclick="sesion()"> Iniciar Sesión </button>
+
+</div>
+<!----------------------- FIN BOTON SESION------------------------->
+
+
+
+
+
 </header>
+
+<!----------------------INICIO FORMULARIO PROCESO--------------------->
+<div id="contenedor">
+  <div class="form-caja">
+
+
+      <!--------------------COMIENZO BOTON INICIAR/REGISTRAR-------------->
+      <div class="boton-caja">
+          <div id="elegir"></div>
+          <button type="button" class="presionar-boton" onclick="login()">Iniciar Sesión</button>
+          <button type="button" class="presionar-boton" onclick="registrar()">Registrar</button>
+     
+      <!--------------------FIN BOTON INICIAR/REGISTRAR-------------------->
+
+
+
+
+  <!-----------------------COMIENZO FORM--------------------------->
+
+  <section id="formulario">  
+
+        <form id="login" class="input-grupo">
+            <input type="text" class="campo-input" placeholder="Nombre de usuario" required>
+            <input type="password" class="campo-input" placeholder="Contraseña" required>
+            <span><input type="checkbox" class="check-caja">Recordar contraseña.</span>
+            <button type="submit" class="boton-submit" onclick="iniciarSesion()">Iniciar</button>
+
+            <!-----------------INICIO BOTON CANCELAR "INICIAR"--------------------->
+            <div class="boton-cancelar">
+               <button class="cancelar" onclick= "cancelar()">Cancelar</button>
+            </div>
+            <!----------------FIN BOTON CANCELAR "INICIAR"------------------------->
+
+        </form>
+
+
+        <form id="registrar" class="input-grupo">
+
+            <input type="text" class="campo-input" placeholder="Nombre de usuario" required>
+            <input type="email" class="campo-input" placeholder="Correo" required>
+            <input type="password" class="campo-input" placeholder="Contraseña" required>
+            <span><input type="checkbox" class="check-caja" required>Acepto los términos y Condiciones.</span>
+            
+            <div class="botones">
+            
+            <button type="submit" class="boton-submit" onclick="datosDuenio()">Continuar</button>
+            </div>
+
+            <!------------------INICIO BOTON CANCELAR REGISTRAR--------------------------->
+            <div class="boton-cancelar">
+              <button class="cancelar" onclick= "cancelarRegistrar()">Cancelar</button>
+          <!------------------FIN BOTON CANCELAR REGISTRAR--------------------------->
+        </form>
+
+        </div>
+   </section>
+
+  <!----------------------------FIN FORM--------------------------->
+
+      </div>
+
+  </div>
+</div>
+<!----------------------FIN FORMULARIO PROCESO------------------------>
+
+
+
 
 <div class="inicio" id="inicio">
 <h1 style="font-size: 34px; justify-content: center; margin-top: 5%; font-size: 50px;"> Hola!!! </h1>
@@ -62,6 +127,18 @@ function showMore() {
 
 <!-- Aaca empieza el main-->
 <main>
+
+
+
+
+
+
+
+
+
+
+
+
  <!-- <div class="left-main"> 
    <p id="leer" class="presentacion"> Hola! Somos <b>GuarDog</b>, un hotel diseñado especialmente 
       para brindarles a tus peludos amigos el mejor cuidado
@@ -203,6 +280,6 @@ function showMore() {
 </footer>
 
 
-
 </body>
+<script src="script.js"></script>
 </html>
