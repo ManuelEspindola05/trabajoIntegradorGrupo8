@@ -12,6 +12,7 @@
    
     <title>Trabajo Integrador</title>
     <script>
+
 function showMore() {
   var moreText = document.querySelector(".more-content");
   if (moreText.style.display === "none") {
@@ -29,7 +30,7 @@ function showMore() {
 <body>
 <!-- Aca empieza el header-->    
 <header>
-   <a href="#" class="logo">
+   <a href="#somos" class="logo">
     <b>
    <img src="imagenes/guardog/GUARDOG/guardogCir1 - copia.png" alt="logo de la compañia">
    </b>
@@ -37,15 +38,31 @@ function showMore() {
    </a>
 
    <nav>
-       <a href="" class="nav-link">Inicio</a>
-       <a href="#somos" class="nav-link">Quienes Somos</a>
+       <a href="#inicio" class="nav-link">Inicio</a>
+       <a href="#galeria1" class="nav-link">Quienes Somos</a>
        <a href="#contactanos" class="nav-link">Contactos</a>   
    </nav> 
 </header>
 
+<div class="inicio" id="inicio">
+<h1 style="font-size: 34px; justify-content: center; margin-top: 5%; font-size: 50px;"> Hola!!! </h1>
+<p  > Somos <b>GuarDog</b>, un hotel diseñado especialmente 
+  para brindarles a tus peludos amigos el mejor cuidado
+  y atención mientras estás ocupado o de vacaciones.<br>
+  <br>
+  En <b>GuarDog</b>, nos preocupamos por el bienestar de cada
+  mascota que llega a nuestras instalaciones. Contamos con habitaciones
+  cómodas y seguras, adaptadas a las necesidades de cada uno
+  de nuestros amados huéspedes.  leer mas </p>
+
+</div>
+
+
+
+
 <!-- Aaca empieza el main-->
 <main>
-  <div class="left-main"> 
+ <!-- <div class="left-main"> 
    <p id="leer" class="presentacion"> Hola! Somos <b>GuarDog</b>, un hotel diseñado especialmente 
       para brindarles a tus peludos amigos el mejor cuidado
       y atención mientras estás ocupado o de vacaciones.<br>
@@ -62,15 +79,15 @@ function showMore() {
 
 
 
-<!-- Aca empieza  el formulario de prosceso-->
-<div class="right-main" > 
+<!-- Aca empieza  el formulario de proceso-->
+<!--<div class="right-main" > 
   <div>
   <h1>Formulario de proceso</h1>
   </div>
-</div>
+</div>-->
 <!--Cambio de orden-->
 <div >
-<section class="somos" >
+<section class="somos" id="somos">
      <h1 style="text-align: center; "> Galeria de fotos </h1>
  </section>
 
@@ -88,7 +105,7 @@ function showMore() {
 
 
 <div>
-      <section class="galeria1">
+      <section class="galeria1" id="galeria1">
         <h1 style="text-align: center; "> Quienes somos </h1>
         
         <div class="contenedor-imagenes">
@@ -96,29 +113,31 @@ function showMore() {
             <img class="foto"src="/imagenes/guardog/GUARDOG/chico-guapo.jpg" alt="">
             <figcaption>Hola soy Ariel
             </figcaption>
+            <div class="texto-imagen" class="b"> <p> Lorem ipsum dolor sit amet </p>  </div>
           </figure>
           
           <figure>
             <img class="foto" src="/imagenes/guardog/GUARDOG/filmacion-interiores-hermosa-chica-adolescente-feliz-tatuajes-vistiendo-su-cabello-jengibre-trenza-desordenada.jpg" alt="">
             <figcaption>Hola soy Sole</figcaption>
+            <div class="texto-imagen"> sole ipsum dolor sit amet consectetur adipisicing elit. Officia alias voluptas debitis? Et, ullam atque. Eos quis officiis libero saepe magni dignissimos dicta, maxime explicabo suscipit quo nobis ut veritatis?  </div>
           </figure>
           
           <figure>
             <img class="foto"src="/imagenes/guardog/GUARDOG/hombre-joven-pie-brazos-cruzados-camiseta-negra.jpg" alt="">
             <figcaption>Hola soy Manuel</figcaption>
+            <div class="texto-imagen" > Manuel ipsum dolor sit amet consectetur adipisicing elit. Officia alias voluptas debitis? Et, ullam atque. Eos quis officiis libero saepe magni dignissimos dicta, maxime explicabo suscipit quo nobis ut veritatis?  </div>
           </figure>
          </div>
 
 
-      <!--<h1 style="text-align: center;">Galeria de fotos</h1>
-       <img src="/imagenes/guardog/GUARDOG/guardog3.png" alt="" style="height: 500px; width: 500px; margin-left: 500px; margin-top: 50px;">-->
+    
       </section>
 
 </div>
 </main>
 
 <!-- Aca empieza el footer-->
-<footer class="pie-pagina">
+<footer class="pie-pagina" id="contactanos">
      
         
               <div class="right">
