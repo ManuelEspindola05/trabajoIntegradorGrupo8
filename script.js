@@ -48,3 +48,22 @@
           moreText.style.display = "none";
         }
       }
+
+
+
+
+      //----------PROPUESTA------INICIO TEXTO-IMAGEN----------------------------//
+
+      document.querySelector('.image-containero').addEventListener('mouseenter', function() {
+        document.querySelector('.text-containero').style.opacity = 1;
+      });
+    
+    
+      function winAlert(){
+        if (onmouseenter === true){
+            window.alert(document.getElementsByClassName("textoImagen"))
+        } else {
+            return .textoImagen.style.display = "none";
+        }
+      }
+      //----------PROPUESTA------FIN TEXTO-IMAGEN-------------------------------//
