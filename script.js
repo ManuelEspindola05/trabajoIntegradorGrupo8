@@ -7,20 +7,24 @@
     
     
     function login(){
-    x.style.left = "50px";
+      
+    x.style.left = "-10%";
     y.style.left = "450px";
     z.style.left = "0px";
     }
     
     function registrar(){
-    x.style.left = "-400px";    
-    y.style.left = "50px";
+   
+   x.style.left = "500px";  
+   y.style.left = "-10%";
     z.style.left = "120px";
+   
+   
     }
     
     function sesion(){
-    q.style.display = "block";
-    x.style.left = "50px";
+    q.style.display= "block"
+    x.style.left = "-10%";
     y.style.left = "450px";
     z.style.left = "0px";
     }
@@ -63,7 +67,7 @@
         if (onmouseenter === true){
             window.alert(document.getElementsByClassName("textoImagen"))
         } else {
-            return .textoImagen.style.display = "none";
+            return textoImagen.style.display = "none";
         }
       }
       //----------PROPUESTA------FIN TEXTO-IMAGEN-------------------------------//
