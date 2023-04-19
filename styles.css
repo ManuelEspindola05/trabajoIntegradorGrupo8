@@ -384,6 +384,7 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font: bold;
+  cursor: pointer;
 }
 #contenedor{
   height: 100%;
@@ -592,3 +593,35 @@ opacity: 1;
   justify-content: space-between;
   }
 /*----------------------------FIN TEXTO SOBRE IMAGEN-----------------------------------*/
+
+
+/* ---------------------------INICIO DATOS DE DIRECCIONES----------------------------- */
+.direcciones--oficinas{
+  margin-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: rgb(253, 7, 7);
+  
+}
+
+.nuestras--oficinas{
+  margin-bottom: 30px;
+  padding-left: 0px;
+}
+
+ul li{
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
+  list-style-type: none;
+  background-image: url(https://as2.ftcdn.net/v2/jpg/05/38/77/89/1000_F_538778908_vZKY7nLwZu6qYHZKqiqKklkpBHPGRWrh.jpg);
+  background-position: 0 0;
+  background-size: 13px;
+  background-repeat: no-repeat;
+}
+
+.e--mail:hover{
+color:#5c6bc0;
+}
+/* ---------------------------FIN DATOS DE DIRECCIONES-------------------------------- */
