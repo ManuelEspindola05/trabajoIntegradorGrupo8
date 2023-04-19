@@ -7,13 +7,15 @@ a{
   color: rgb(253, 7, 7);
 }
 
+
                     /* ------------------------WIDGET CLIMA---------------------- */
 .widgetClima {
   padding: 0;
   margin: 0;
+  margin-top: -1.4%;
   display: flex;
   align-items: start;
-  background-color: transparent;
+  background-color:transparent;
   color: #c3c916;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -80,6 +82,7 @@ h1{
  p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+ 
   color: rgb(245, 97, 44);
   margin-top: 5%;
   justify-content: center;
@@ -203,7 +206,6 @@ width: 25%;/*ancho del div*/
   width: 300px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  color: rgb(245, 97, 44);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
@@ -226,11 +228,47 @@ color:blueviolet;
 
 }
 
-/*agrego el css de leer mas*/
+/*----------- Leer mas en inicio-------------------*/
 .more-content{
 display: none; 
+background-color:  white;
+position: absolute;
+  top: 60%;
+  right: -48%;
+
+  transform: translate(-50%, -50%);
+  
+width: 200vh;
+height: 80vh;
+
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: rgb(245, 97, 44);
+  text-align:start;
+  border-radius: 5px;
+  border: 10px solid rgb(255, 148, 41);
+  box-shadow: 0px 2px 5px 2px red #000000;
+
+}
+/*----texto leer mas-----*/
+h4{
+  margin-top: 0%;
+  text-align: center;
+  margin-left: 5%;
+  font-size: 15px;
+  color: red;
+  line-height: 29px;
 }
 
+/*----texto inicio-----*/
+h5{
+  margin-top: 3%;
+  margin-left: 5%;
+  font-size: 25px;
+  color: red;
+  line-height: 35px;
+}
 
 body{
   background-image: url(imagenes/guardog/GUARDOG/happy-smile-dog-images-png.png);
@@ -242,6 +280,7 @@ body{
   max-height: 100vh;
   min-height: 100vh; 
   margin: 0; 
+  padding: 0;
   padding-bottom: 20px; 
   box-sizing: border-box; 
   margin-top: 20px;
