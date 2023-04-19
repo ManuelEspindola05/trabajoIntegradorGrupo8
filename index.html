@@ -9,25 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <link rel="icon" href="./imagenes/guardog/GUARDOG/faviconGuarDog.ico" type="image/x-ico">
-   
+    
     <title>Trabajo Integrador</title>
-    <script>
-
-function showMore() {
-  var moreText = document.querySelector(".more-content");
-  if (moreText.style.display === "none") {
-    moreText.style.display = "block";
-  } else {
-    moreText.style.display = "none";
-  }
-}
-     </script>
-
-
-
 </head>
 
 <body>
+
+
+<!-- ---------------------INICIO WIDGET CLIMA----- (El CSS está arriba de todo) ------------------- -->
+<div class="widgetClima">
+  <div id="ww_0b2acf06acae6" v='1.3' loc='auto' a='{"t":"ticker","lang":"es","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/es/android-app/" id="ww_0b2acf06acae6_u" target="_blank">Mejor app del tiempo para Android</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_0b2acf06acae6"></script>
+ </div>
+<!-- ---------------------FIN WIDGET CLIMA------ (El CSS está arriba de todo) --------------------- -->
+
+
+
 <!-- Aca empieza el header-->    
 <header>
    <a href="#somos" class="logo">
@@ -42,7 +38,87 @@ function showMore() {
        <a href="#galeria1" class="nav-link">Quienes Somos</a>
        <a href="#contactanos" class="nav-link">Contactos</a>   
    </nav> 
+
+<!-----------------------INICIO BOTON SESION----------------------->            
+<div id="iniciarSesion">
+  <button class="boton-sesion" onclick="sesion()"> Iniciar Sesión </button>
+
+</div>
+<!----------------------- FIN BOTON SESION------------------------->
+
+
+
+
+
 </header>
+
+<!----------------------INICIO FORMULARIO PROCESO--------------------->
+<div id="contenedor">
+  <div class="form-caja">
+
+
+      <!--------------------COMIENZO BOTON INICIAR/REGISTRAR-------------->
+      <div class="boton-caja">
+          <div id="elegir"></div>
+          <button type="button" class="presionar-boton" onclick="login()">Iniciar Sesión</button>
+     
+          <button type="button" class="presionar-boton" onclick="registrar()">Registrar</button>
+     
+      <!--------------------FIN BOTON INICIAR/REGISTRAR-------------------->
+
+
+
+
+  <!-----------------------COMIENZO FORM--------------------------->
+
+  <section id="formulario">  
+
+        <form id="login" class="input-grupo">
+            <input type="text" class="campo-input" placeholder="Nombre de usuario" required>
+            <input type="password" class="campo-input" placeholder="Contraseña" required>
+            <span><input type="checkbox" class="check-caja">Recordar contraseña.</span>
+            <button type="submit" class="boton-submit" onclick="iniciarSesion()">Iniciar</button>
+
+            <!-----------------INICIO BOTON CANCELAR "INICIAR"--------------------->
+            <div class="boton-cancelar">
+               <button class="cancelar" onclick= "cancelar()">Cancelar</button>
+            </div>
+            <!----------------FIN BOTON CANCELAR "INICIAR"------------------------->
+
+        </form>
+
+
+        <form id="registrar" class="input-grupo">
+
+            <input type="text" class="campo-input" placeholder="Nombre de usuario" required>
+            <input type="email" class="campo-input" placeholder="Correo" required>
+            <input type="password" class="campo-input" placeholder="Contraseña" required>
+            <span><input type="checkbox" class="check-caja" required>Acepto los términos y Condiciones.</span>
+            
+            <div class="botones">
+            
+            <button type="submit" class="boton-submit" onclick="datosDuenio()">Continuar</button>
+            </div>
+
+            <!------------------INICIO BOTON CANCELAR REGISTRAR--------------------------->
+            <div class="boton-cancelar">
+              <button class="cancelar" onclick= "cancelarRegistrar()">Cancelar</button>
+          <!------------------FIN BOTON CANCELAR REGISTRAR--------------------------->
+        </form>
+
+        </div>
+   </section>
+
+  <!----------------------------FIN FORM--------------------------->
+
+      </div>
+
+  </div>
+</div>
+<!----------------------FIN FORMULARIO PROCESO------------------------>
+
+
+
 
 <div class="inicio" id="inicio">
 <h1 style="font-size: 34px; justify-content: center; margin-top: 5%; font-family: Arial, Helvetica, sans-serif;   font-size: 50px;"> Hola!!! </h1>
@@ -53,7 +129,12 @@ function showMore() {
   En <b>GuarDog</b>, nos preocupamos por el bienestar de cada
   mascota que llega a nuestras instalaciones. Contamos con habitaciones
   cómodas y seguras, adaptadas a las necesidades de cada uno
+<<<<<<< HEAD
   de nuestros amados huéspedes.</p>
+=======
+  de nuestros amados huéspedes.  leer mas </p> <label class="more-content">  bla bla bla bla   </label>
+  <a href="#"  id="leer-mas" onclick="showMore()" style="color: blue;">leer más  </a>
+>>>>>>> d7f5031803e8abbe1f1ab86f093bc5226181c375
 
 </div>
 
@@ -62,6 +143,18 @@ function showMore() {
 
 <!-- Aaca empieza el main-->
 <main>
+
+
+
+
+
+
+
+
+
+
+
+
  <!-- <div class="left-main"> 
    <p id="leer" class="presentacion"> Hola! Somos <b>GuarDog</b>, un hotel diseñado especialmente 
       para brindarles a tus peludos amigos el mejor cuidado
@@ -138,6 +231,14 @@ function showMore() {
       <section class="Quienes" id="quienes1">
         <h4 style="text-align: center; "> "Nuestro equipo" </h4>
 
+<<<<<<< HEAD
+=======
+<!--
+<div>
+      <section class="galeria1" id="galeria1">
+        <h1 style="text-align: center; "> Quienes somos </h1>
+        
+>>>>>>> d7f5031803e8abbe1f1ab86f093bc5226181c375
         <div class="contenedor-imagenes">
           <figure>
             <img class="foto"src="/imagenes/guardog/GUARDOG/chico-guapo.jpg" alt="">
@@ -164,14 +265,66 @@ function showMore() {
       </section>
 
 </div>
+-->
+
+
+
+ <!---------PROPUESTA-----------INICIO TEXTO-IMAGEN--------------------------> 
+ <section class="galeria1" id="galeria1">
+  <h1 style="text-align: center; "> Quienes somos </h1>
+  
+  
+ <div class="imagenesPresentacion">
+
+       
+         <div class="image-containero">
+                <img class="foto--textoImagen" src="/imagenes/guardog/GUARDOG/filmacion-interiores-hermosa-chica-adolescente-feliz-tatuajes-vistiendo-su-cabello-jengibre-trenza-desordenada.jpg" alt="imagen Soledad">
+             <div class="text-containero">
+              <figcaption>Hola, soy Sole</figcaption>
+                     <p class="textoImagen" onmouseenter="winAlert()">Soy cuidadora, peluquera y terapeuta de perros con más de 15 años de experiencia trabajando con estas adorables mascotas. Desde muy joven me interesé  por el cuidado y el bienestar de los animales, especialmente los perros, lo que me llevó a estudiar sobre su comportamiento y necesidades.
+                     </p>
+              </div>
+          </div>
+
+
+
+          <div class="image-containero">
+            <img class="foto--textoImagen" src="/imagenes/guardog/GUARDOG/chico-guapo.jpg"   alt="imagen Ariel">
+            <div class="text-containero">
+                 <figcaption>Hola, soy Ariel</figcaption>
+               <p class="textoImagen" onmouseenter="winAlert()">Soy adiestrador de perros con más de 10 años de experiencia en el campo del entrenamiento canino. Desde joven, he sido un amante de los animales, especialmente de los perros, y esto me ha llevado a dedicarme a esta profesión. He trabajado con perros de todas las edades, razas y tamaños.
+               </p>
+             </div>
+        </div>
+
+
+          <div class="image-containero">
+            <img class="foto--textoImagen" src="/imagenes/guardog/GUARDOG/hombre-joven-pie-brazos-cruzados-camiseta-negra.jpg"   alt="imagen Ariel">
+            <div class="text-containero">
+              <figcaption>Hola, soy Manuel</figcaption>
+                <p class="textoImagen" onmouseenter="winAlert()">Me especializo como instructor, paseador y motivador de perros con más de 17 años de experiencia en el campo del cuidado canino. Me apasionan los perros y me encanta ayudar a los dueños a lograr la mejor relación posible con sus mascotas. 
+                </p>
+             </div>
+        </div>
+ </div>
+</section>
+
+  <!----------PROPUESTA-----------FIN SEGUNDO TEXTO-IMAGEN--------------------->
+
+
+
+
+
+
+
 </main>
 
 <!-- Aca empieza el footer-->
 <footer class="pie-pagina" id="contactanos">
      
-        
+
               <div class="right">
-           
+
                <form>
                 <!--Aca puse contacto-->
                 
@@ -196,27 +349,42 @@ function showMore() {
 
 
     <a href="#">
-        <img src="imagenes/guardog/GUARDOG/guardogCir1.png" alt="logo2" style="width: 300px; height: 300px; margin-left: 55px;">
+        <img src="imagenes/guardog/GUARDOG/guardogCir1.png" alt="logo2" style="width: 200px; height: 200px; margin-left: 20px; align-items: center;">
     </a>
 
 
-    <a href="https://instagram.com" target="_blank"><img src="logos redes soc/instagram.png" alt="Instagram"  style="margin-left: 165px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
+    <!--------------------------------INICIO DATOS DE DIRECCIONES----------------------------- -->
+                 <div class="direcciones--oficinas">
+                   <h4 class="nuestras--oficinas">
+                     <b>Nuestras direcciones:</b>
+                   </h4>
+                   <ul class="lista--direcciones">
+                     <li><b>Dirección: </b><br><a href="./imagenes/pata.png" title="pata iconos"></a>Avenida San Roque 656</li>
+                     <li><b>Teléfono: </b> +54 9 555 0656</li>
+                     <li><b>Email: </b> <a class="e--mail" href="mailto:">guardog.oficial@gmail.com</a></li>
+                   </ul>
+                 </div>
+    <!--------------------------------FIN DATOS DE DIRECCIONES-------------------------------- -->
 
 
 
-<div class="col-2">
-
-  <a href="https://www.facebook.com/ " target="_blank src="><img src="logos redes soc\facebook-logo.png" alt="Email"style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "    ></a>
-
-</div>
-
-<div class="col-2">
-
-  <a href="https://api.whatsapp.com/"  target="_blank"><img src="logos redes soc/WhatsApp-Logo-Transparent-PNG.png" alt="Phone" style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
-
-</div>
+    <a href="https://instagram.com" target="_blank"><img src="logos redes soc/instagram.png" alt="Instagram"  style="margin-left: 50px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
 
 
+
+                 <div class="col-2">
+                 
+                   <a href="https://www.facebook.com/ " target="_blank src="><img src="logos redes soc\facebook-logo.png" alt="Email"
+                       style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "></a>
+                 
+                 </div>
+                 
+                 <div class="col-2">
+                 
+                   <a href="https://api.whatsapp.com/" target="_blank"><img src="logos redes soc/WhatsApp-Logo-Transparent-PNG.png"
+                       alt="Phone" style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "></a>
+                 
+                 </div>
 
 </div>
 
@@ -233,6 +401,6 @@ function showMore() {
 </footer>
 
 
-
 </body>
+<script src="script.js"></script>
 </html>
